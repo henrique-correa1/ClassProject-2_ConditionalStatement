@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Henrique Correa
+//ISM4300.901S20
+
+using System;
 
 namespace ClassProject_2_ConditionalStatement
 {
@@ -55,12 +58,14 @@ namespace ClassProject_2_ConditionalStatement
                 {
                     Console.WriteLine("Values must not be less than 0 and not exceed 100");
                 }
+                Console.ReadKey(true);
             }
             // End of try
             catch
             {
                 Console.WriteLine("Values must lie between 0 and 100.");
                 Console.WriteLine("Press ESC to exit.");
+                Console.ReadKey(true);
             }
             }
         }
