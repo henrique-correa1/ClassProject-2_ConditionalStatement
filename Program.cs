@@ -6,13 +6,14 @@ namespace ClassProject_2_ConditionalStatement
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What grade do you expect to get in ISM 4300?");
-            Console.WriteLine();
+            Console.WriteLine("What grade do you expect to get in ISM 4300?");          
 
+            // Try catch statement to check whether or not the user input is valid
             try
             {
-                int score = int.Parse(Console.ReadLine());
-
+                string input = Console.ReadLine();
+                int score = int.Parse(input);
+             
                 // if - else statment to return what letter grade the user should get
                 if ((score >= 98) && (score <= 100))
                 {
@@ -55,6 +56,7 @@ namespace ClassProject_2_ConditionalStatement
                     Console.WriteLine("Values must not be less than 0 and not exceed 100");
                 }
             }
+            // End of try
             catch
             {
                 Console.WriteLine("Values must lie between 0 and 100.");
